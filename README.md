@@ -11,10 +11,10 @@ My model is based on the principles of Siamese networks.
 
 * It's an implementation of CNN’S VGG16 called VGGface, that extracts facial features in the form of a vector.
 
-* We get the feature vector for all images and then we concatenate the feature vector of designated images of a pair to form a combined feature vector for the pair,we do this for each pair
+* I get the feature vector for all images and then I concatenate the feature vector of designated images of a pair to form a combined feature vector for the pair,I do this for each pair
 ![alt text](https://i0.wp.com/sefiks.com/wp-content/uploads/2019/04/vgg-face-architecture.jpg?w=1805&ssl=1)
 
-* We then use different similarity measures and define a threshold line for our class segregation 
+* I then use different similarity measures and define a threshold line for our class segregation 
 
 The idea is input images according to labels generated from our generated labelled dataset(related and unrelated) to extract facial feature predictors using the VGG-Face model.
 These features are then concatenated to produce a single feature vector of the same length which is then fed into a CNN Network to classify this combined data using the labels of our dataset.
